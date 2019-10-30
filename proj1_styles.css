@@ -1,0 +1,247 @@
+body{
+    display: flex;
+    background-color: white;
+    flex-wrap: wrap;
+    height: 100%;
+}
+header {
+    flex: auto;
+    background-color:white;
+    width: 100%; 
+}
+.languages{
+    display: flex;
+    background-color: white;
+    justify-content: center;
+   
+}
+ul{
+    list-style: none;
+    margin: auto;
+}
+ul:first-of-type{
+    border-right: 2px solid black;
+    margin-left: 550px;
+    margin-right: -500px;
+    padding-right: 2px;
+   
+}
+
+.button1 {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #4CAF50;
+    padding: 5px;
+}
+.button2 {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:#7AB5B7;
+    padding: 5px;
+    
+}
+.title {
+    display: flex;
+    background-color: white;
+}
+.theTitle{
+    display: flex;
+    justify-content: center;
+    font-family:'Quintessential', cursive;
+    font-size: 50px; 
+    width: 100%;  
+} 
+.date {
+    display: flex;
+    list-style: none;
+    border-bottom: 1px solid black;
+    justify-content: space-between;
+}
+.date .october {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    background-color: white;
+}
+.date .today {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    background-color: white;
+
+}
+hr{
+    border: .5px solid black;
+}
+
+main {
+    flex: auto;
+    background-color: white;
+    border-bottom: 1px solid black;
+    
+}
+.top{
+    display: flex;
+    border-bottom: 1px solid black;
+    padding: 5px;
+} 
+.start {
+    display: flex;
+    background-color: white;
+    margin: 5px;
+    border-right: 1px solid lightslategray;
+}
+.start :first-of-type {
+    display: flex;
+    margin-right: 5px;
+}
+.briefing{
+    margin-top: 13px;
+    margin-right: 3px;
+}
+.briefing .subhead{
+    font-size: 14px;
+    text-align: center;
+}
+.middle{
+    display: flex;
+    border-right: 1px solid lightslategray;
+    background-color:white;
+    margin: 5px;
+}
+.middle :first-of-type {
+    display: flex;
+    margin-right: 5px;
+}
+.Today{
+    margin-top: 13px;
+    margin-right: 3px;
+}
+.third{
+    display: flex;
+    background-color: white;
+    margin: 5px;
+    border-right: 1px solid lightslategray
+}
+.third :first-of-type {
+    display: flex;
+    margin-right: 5px;
+}
+.description {
+    margin-top: 13px;
+    margin-right: 3px;
+}
+.end{
+    display: flex;
+    background-color:white;
+    margin: 5px;
+}
+.end :first-of-type {
+    display: flex;
+    margin-right: 5px;
+}
+img {
+    border-radius: 2px;
+}
+.siteContent{
+    width: 80%;
+	display: flex;
+    position: relative;
+    
+}
+.container1{
+    display: flex;
+    
+}
+.content1 {
+    border: 1px solid black;
+    background-color: lightyellow;
+    margin-right: 20px;
+
+}
+.content2 {
+    border: 1px solid black;
+    background-color: lightsalmon;
+    
+}
+.content3 {
+    border: 1px solid black;
+    background-color: lightgray;
+}
+.content4 {
+    border: 1px solid black;
+    background-color: lightskyblue;
+}
+hr{
+    border: .5px solid black;
+}
+hr{
+    border: .5px solid black;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+}
+.endTitle{
+    font-family:'Quintessential', cursive;
+    font-size: 18px;
+}
+.list{
+   list-style: none;
+   display: column;
+}
+.item1{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif, bold;
+}
+.item1 :first-of-type{
+}
+.list2{
+    display: column;
+    list-style: none;
+}
+.item2{
+    
+}
+.list3{
+    list-style: none;
+    display: column;
+}
+.item3{
+    
+}
+.list4{
+    list-style: none;
+    display: column;
+}
+.item4{
+    
+}
+
+.languages ul :link,
+.languages ul  :visited {
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+}
+
+.languages .English :hover,
+.languages .English :active{
+    border-bottom: 2px solid #131212;
+} 
+/* .siteContent{
+    display: grid;
+}
+.content1{
+    grid-column: 1/2;
+} */ 
+/* @keyframes list { 
+    0% {
+        opacity: 0;
+        top: 100px;
+    }
+    75% {
+        opacity: 0.5;
+        top: 0px;
+    }
+    100% {
+        opacity: 1;
+    }
+} */
