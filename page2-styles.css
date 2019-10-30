@@ -71,7 +71,6 @@ ul:first-of-type{
 hr{
     border: .5px solid black;
 }
-
 main {
     flex: auto;
     background-color: white;
@@ -139,127 +138,27 @@ main {
 }
 img {
     border-radius: 2px;
+
 }
-.first{
-    margin: 5px 0px;
-}
-.columns {
-    display: flex;
-    width: 100%;
-}
-p{
-    margin: 5px;
-    margin-bottom: 10px;
-    text-align: left;
-}
-h2 {
-    margin: 10px;
-    margin-bottom: 10px;
-    
-}
-.content1 {
-    background-color: white;
-    margin-bottom: 20px;
-    margin-right: 50px;
-    border-bottom: 1px solid lightslategray;
-}
-.content2 {
-    background-color: white;
-    margin-top: 10px;
-    margin-right: 50px;
-    display: flex;
-}
-.picstory2 {
+.story1pic {
     width: 250px;
     height: auto; 
-    margin: -10px -10px 10px 0px;
+   
 }
-.content3 {
-    border-left: 1px solid lightslategray;
-    background-color: white;
-    max-width: 50%;
-    display: flex;
-    margin-left: -10px;
-}
-.content3 p{
-    text-align: left;
-}
-.picture {
-    width: 300px;
-    height: auto; 
-    margin-top: 80px;
-
-}
-.content4 {
-    border-top: 1px solid lightslategray;
-    background-color: white;
-}
-.content5{
-    border-top: 1px solid lightslategray;
-    border-left: 1px solid lightslategray;
-}
-hr{
-    border: .5px solid lightslategray;
-}
-hr{
-    border: .5px solid lightslategray;
-}
-footer{
-    display: flex;
-    background-color: lightsteelblue;
-    justify-content: space-between;
-    height: 50%;
-}
-.list{
-   list-style: none;
-   display: flex;
-   flex-direction: column;
-   background-color: lightsalmon;
-}
-.items1{
+.story1 {
     display: flex;
     flex-direction: column;
-
+    align-items: center;
+    text-align: justify;
 }
-.list2{
-    display: column;
-    list-style: none;
-    background-color: lightseagreen;
+h2{
+    font-family: Courgette, cursive;
+    font-size: 50px;
+    max-width: 45%;
+    margin-bottom: 3px;
 }
-
-.list3{
-    list-style: none;
-    display: column;
-    background-color: lightyellow;
+p{
+    text-align: center;
+    text-align: justify;
+    max-width: 45%
 }
-
-.list4{
-    list-style: none;
-    display: column;
-    background-color: lightgrey;
-}
-
-
-/* .languages ul :link,
-.languages ul  :visited {
-    border-bottom: 2px solid transparent;
-    transition: border-bottom 0.2s;
-}
-
-.languages .English :hover,
-.languages .English :active{
-    border-bottom: 2px solid #131212;
-} 
-/* @keyframes list {  */
-    /* 0% {
-        opacity: 0;
-        top: 100px;
-    }
-    75% {
-        opacity: 0.5;
-        top: 0px;
-    }
-    100% {
-        opacity: 1;
-    }
-} */ 
