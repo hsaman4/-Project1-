@@ -9,34 +9,33 @@ header {
     background-color:white;
     width: 100%; 
 }
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
 .languages{
     display: flex;
     background-color: white;
-    justify-content: center;
+    width: 70%;
+    justify-content: flex-end;
+
 }
-ul{
+.nav li {
     list-style: none;
     margin: auto;
+    align-self: flex-end;
+    margin: auto;
+    flex:1;
+    text-align: center;
 }
 
-ul:first-of-type{
-    border-right: 2px solid black;
-    margin-left: 550px;
-    margin-right: -500px;
-    padding-right: 2px;
-   
-}
-
-.button1 {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #4CAF50;
-    padding: 5px;
-}
-.button2 {
-    font-family: Arial, Helvetica, sans-serif;
+button{
     background-color:#7AB5B7;
-    padding: 5px;
-    
+    padding: 10px 25px;
+    text-align: center;
+    border-radius: 2px;    
 }
 .title {
     display: flex;
@@ -48,6 +47,7 @@ ul:first-of-type{
     font-family:'Quintessential', cursive;
     font-size: 50px; 
     width: 100%;  
+    font-weight: bold;
 } 
 .date {
     display: flex;
@@ -75,7 +75,6 @@ hr{
 main {
     flex: auto;
     background-color: white;
-    border-bottom: 1px solid black;
     
 }
 .top{
@@ -128,14 +127,60 @@ main {
     margin-top: 13px;
     margin-right: 3px;
 }
+#book {
+    text-decoration: none;
+}
+#modal {
+    background-color:rgba(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    overflow: auto;
+    
+}
+#text{
+    background-color: white;
+    height: 250px;
+    width: 500px;
+    border-radius: 2px;
+    margin: 150px auto;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+}
+#close{
+    color: #7AB5B7;
+    font-size: 20px;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+#text h2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#text p{
+    text-align: center;
+    
+}
 .end{
     display: flex;
     background-color:white;
-    margin: 5px;
+    margin-top: 5px;
 }
 .end :first-of-type {
     display: flex;
     margin-right: 5px;
+}
+.weather {
+    margin-top: 13px;
+    margin-right: 3px;
 }
 img {
     border-radius: 2px;
@@ -162,7 +207,15 @@ h2 {
     margin-bottom: 20px;
     margin-right: 50px;
     border-bottom: 1px solid lightslategray;
+    transform: scale(1.0);
+    transition: transform 1s;
 }
+.content1:hover{
+    background-color: lightgrey;
+    transform: scale(1.1);
+    transition: .5s;
+}
+
 .content2 {
     background-color: white;
     margin-top: 10px;
@@ -173,6 +226,10 @@ h2 {
     width: 250px;
     height: auto; 
     margin: -10px -10px 10px 0px;
+}
+.content2:hover{
+    background-color: lightgrey;
+    transition: .5s;
 }
 .content3 {
     border-left: 1px solid lightslategray;
@@ -188,15 +245,27 @@ h2 {
     width: 300px;
     height: auto; 
     margin-top: 80px;
-
+}
+.content3 :hover{
+    background-color: lightgrey;
+    transition: .5s;
 }
 .content4 {
     border-top: 1px solid lightslategray;
     background-color: white;
 }
+.content4 :hover{
+    background-color: lightgrey;
+    transition: .5s;
+
+}
 .content5{
     border-top: 1px solid lightslategray;
     border-left: 1px solid lightslategray;
+}
+.content5 :hover{
+    background-color: lightgrey;
+    transition: .5s;
 }
 hr{
     border: .5px solid lightslategray;
@@ -206,60 +275,123 @@ hr{
 }
 footer{
     display: flex;
-    background-color: lightsteelblue;
-    justify-content: space-between;
-    height: 50%;
+    background-color: white;
+    justify-content: space-around; 
+    height: 35%;
+    width: 85%;
+    font-size: 14px;
+}
+.smallTitle{
+    font-size: 20px;
+    font-family:'Quintessential', cursive;
+    display: flex;
+    justify-content: flex-start;
+    font-weight: bold;
+
 }
 .list{
    list-style: none;
    display: flex;
+   justify-content: center;
    flex-direction: column;
-   background-color: lightsalmon;
+   background-color: white;
+   padding: 20px;
+   
 }
-.items1{
-    display: flex;
-    flex-direction: column;
-
+.item1{
+    text-decoration: underline;
+    font-weight: bold;
+    text-align: center;
+}
+footer li {
+    margin-bottom: 10px;
 }
 .list2{
-    display: column;
-    list-style: none;
-    background-color: lightseagreen;
+   list-style: none;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   background-color: white;
+   
 }
-
+.item2 {
+    text-decoration: underline;
+    font-weight: bold;
+    text-align: center;
+}
 .list3{
-    list-style: none;
-    display: column;
-    background-color: lightyellow;
+   list-style: none;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   background-color:white;
+   padding: 20px;
 }
-
+.item3{
+    text-decoration: underline;
+    font-weight: bold;
+    text-align: center;
+}
 .list4{
-    list-style: none;
-    display: column;
-    background-color: lightgrey;
+   list-style: none;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   background-color:white;
+   padding: 20px;
+   margin-right: 70px;
 }
-
-
-/* .languages ul :link,
-.languages ul  :visited {
-    border-bottom: 2px solid transparent;
-    transition: border-bottom 0.2s;
+.item4{
+    text-decoration: underline;
+    font-weight: bold;
+    text-align: center;
 }
-
-.languages .English :hover,
-.languages .English :active{
-    border-bottom: 2px solid #131212;
-} 
-/* @keyframes list {  */
-    /* 0% {
-        opacity: 0;
-        top: 100px;
+@media all and (max-width: 655px) {
+    header {
+        display: flex;
+        flex-direction: column;
     }
-    75% {
-        opacity: 0.5;
-        top: 0px;
+    .nav {
+        flex-direction: column;
+        align-items: center;
     }
-    100% {
-        opacity: 1;
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
     }
-} */ 
+    .top{
+        flex-direction: column;
+    }
+    .content2{
+        flex-direction: column;
+    } 
+    .content3{
+        flex-direction: column;
+    } 
+    footer{
+        margin: 0px;
+        padding: 0px;
+        height: 3%;
+        border-bottom: 1px solid black;
+    }
+    .list{
+        display: none;
+    }
+    .list1{
+        display: none;
+    }
+    .list2{
+        display: none;
+    }
+    .list3{
+        display: none;
+    }
+    .list4{
+        display: none;
+    }
+    body{
+        width: 100%;
+    }
+}

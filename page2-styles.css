@@ -9,34 +9,34 @@ header {
     background-color:white;
     width: 100%; 
 }
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
 .languages{
     display: flex;
     background-color: white;
-    justify-content: center;
+    width: 50%;
+    justify-content: flex-end;
+
 }
-ul{
+li {
     list-style: none;
     margin: auto;
+    align-self: flex-end;
+    margin: auto;
+    flex:1;
+    text-align: center;
 }
 
-ul:first-of-type{
-    border-right: 2px solid black;
-    margin-left: 550px;
-    margin-right: -500px;
-    padding-right: 2px;
-   
-}
-
-.button1 {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #4CAF50;
-    padding: 5px;
-}
-.button2 {
-    font-family: Arial, Helvetica, sans-serif;
+button{
     background-color:#7AB5B7;
-    padding: 5px;
-    
+    padding: 10px 25px;
+    text-align: center;
+    border-radius: 2px;  
+    text-decoration: none;  
 }
 .title {
     display: flex;
@@ -48,6 +48,7 @@ ul:first-of-type{
     font-family:'Quintessential', cursive;
     font-size: 50px; 
     width: 100%;  
+    font-weight: bold;
 } 
 .date {
     display: flex;
@@ -71,11 +72,13 @@ ul:first-of-type{
 hr{
     border: .5px solid black;
 }
+hr{
+    border: .5px solid black;
+}
+
 main {
     flex: auto;
     background-color: white;
-    border-bottom: 1px solid black;
-    
 }
 .top{
     display: flex;
@@ -162,3 +165,149 @@ p{
     text-align: justify;
     max-width: 45%
 }
+#more {
+    display: none;
+}
+button {
+    background-color:#7AB5B7;
+    padding: 10px 25px;
+    text-align: center;
+    
+}
+.story1 button{
+    animation: theButton 3s infinite;
+}
+hr{
+    border: .5px solid lightslategray;
+}
+hr{
+    border: .5px solid lightslategray;
+}
+footer {
+    display: flex;
+    background-color: white;
+    justify-content: space-around; 
+    height: 30%;
+    width: 85%;
+    font-size: 14px;
+}
+.smallTitle {
+    font-size: 20px;
+    font-family:'Quintessential', cursive;
+    display: flex;
+    justify-content: flex-start;
+    font-weight: bold;
+}
+.list{
+   list-style: none;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   background-color: white;
+   padding: 20px; 
+}
+.item1{
+    text-decoration: underline;
+    font-weight: bold;
+    text-align: center;
+}
+footer li {
+    margin-bottom: 10px;
+}
+.list2{
+   list-style: none;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   background-color: white;
+   padding: 20px;
+}
+.item2 {
+    text-decoration: underline;
+    font-weight: bold;
+    text-align: center;
+}
+.list3{
+   list-style: none;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   background-color:white;
+   padding: 20px;
+}
+.item3{
+    text-decoration: underline;
+    font-weight: bold;
+    text-align: center;
+}
+.list4{
+   list-style: none;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   background-color:white;
+   padding: 20px;
+   margin-right: 70px;
+}
+.item4{
+    text-decoration: underline;
+    font-weight: bold;
+    text-align: center;
+}
+ @keyframes theButton {
+    0% {
+        opacity: 0;
+        top: 100px;
+    }
+    75% {
+        opacity: 0.5;
+        top: 0px;
+    }
+    100% {
+        opacity: 1;
+ }
+}
+@media all and (max-width: 655px) {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    .top{
+        flex-direction: column;
+    }
+    footer{
+        margin: 0px;
+        padding: 0px;
+        height: 3%;
+        border-bottom: 1px solid black;
+    }
+    .list{
+        display: none;
+    }
+    .list1{
+        display: none;
+    }
+    .list2{
+        display: none;
+    }
+    .list3{
+        display: none;
+    }
+    .list4{
+        display: none;
+    }
+    body{
+        width: 100%;
+    }
+}
+
