@@ -15,14 +15,22 @@ header {
     justify-content: flex-end;
     width: 100%;
 }
+.icon img{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+.iconLeft {
+    position: absolute;
+    left: 5px;
+}
 .languages{
     display: flex;
     background-color: white;
-    width: 50%;
-    justify-content: flex-end;
+    width: 70%;
 
 }
-li {
+.nav li {
     list-style: none;
     margin: auto;
     align-self: flex-end;
@@ -35,13 +43,20 @@ button{
     background-color:#7AB5B7;
     padding: 10px 25px;
     text-align: center;
-    border-radius: 2px;  
-    text-decoration: none;  
+    border-radius: 2px;    
 }
 .title {
     display: flex;
     background-color: white;
 }
+.theTitle{
+    display: flex;
+    justify-content: center;
+    font-family:'Quintessential', cursive;
+    font-size: 50px; 
+    width: 100%;  
+    font-weight: bold;
+} 
 .theTitle{
     display: flex;
     justify-content: center;
@@ -172,10 +187,9 @@ button {
     background-color:#7AB5B7;
     padding: 10px 25px;
     text-align: center;
-    
 }
 .story1 button{
-    animation: theButton 3s infinite;
+    animation: theButton 2s infinite; 
 }
 hr{
     border: .5px solid lightslategray;
@@ -254,6 +268,7 @@ footer li {
     font-weight: bold;
     text-align: center;
 }
+
  @keyframes theButton {
     0% {
         opacity: 0;

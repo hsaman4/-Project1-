@@ -15,11 +15,19 @@ header {
     justify-content: flex-end;
     width: 100%;
 }
+.icon img{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+.iconLeft {
+    position: absolute;
+    left: 5px;
+}
 .languages{
     display: flex;
     background-color: white;
     width: 70%;
-    justify-content: flex-end;
 
 }
 .nav li {
@@ -130,7 +138,7 @@ main {
 #book {
     text-decoration: none;
 }
-#modal {
+.modal {
     background-color:rgba(0,0,0);
     background-color: rgba(0,0,0,0.4);
     position: fixed;
@@ -168,6 +176,9 @@ main {
 #text p{
     text-align: center;
     
+}
+.close{
+    display: none;
 }
 .end{
     display: flex;
@@ -229,6 +240,7 @@ h2 {
 }
 .content2:hover{
     background-color: lightgrey;
+    margin: auto;
     transition: .5s;
 }
 .content3 {
@@ -249,6 +261,7 @@ h2 {
 .content3 :hover{
     background-color: lightgrey;
     transition: .5s;
+
 }
 .content4 {
     border-top: 1px solid lightslategray;
